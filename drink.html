@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Напої</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="homeCSS.css">
+    <link rel="stylesheet" href="pieCSS.css">
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">Кондитерська крамниця</a>
+        <div class="logo-img"><img src="img/logo.png" alt="logo" style="max-width: 100%; height: auto;"></div>
+        <ul class="navbar-nav">
+            <li><a class="nav-link" href="index.html" ><i class="fas fa-home "></i></a></li>
+            <li><a class="nav-link" href="contactusHTML.html"><i class="fas fa-mobile-alt "></i></a></li>
+            <li><a class="nav-link" href="cartHTML.html"><i class="fas fa-cart-shopping"></i></a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="tovar-list">
+    <div class="tovar-card" onmouseenter="showButton(this)" onmouseleave="hideButton(this)" data-image="img/drink1.jpg" data-price="17">
+        <img src="img/drink1.jpg" alt="Напої" class="tovar-image">
+        <div class="tovar-info">
+            <h2 class="tovar-title">Чай фруктово-медовий «Манго та маракуя»</h2>
+            <span class="tovar-size">Вага - 50 г.</span>
+            <div class="details">
+                <p><strong>Фруктово-медовий чай «Манго та маракуя» – це смачний та корисний напій, що однаково смакує як холодним, так і гарячим. Влітку напій Асканія освіжить та тонізує, а взимку зігріє своїм теплом і подарує присмак улюблених ягід та фруктів.</strong></p>
+            </div>
+        </div>
+        <button class="view-button" onclick="showProductDetails(this)">Переглянути товар</button>
+    </div>
+    <div class="tovar-card" onmouseenter="showButton(this)" onmouseleave="hideButton(this)" data-image="img/drink2.jpg" data-price="17">
+        <img src="img/drink2.jpg" alt="Напої" class="tovar-image">
+        <div class="tovar-info">
+            <h2 class="tovar-title">Чай фруктово-медовий «Імбир та лемонграсс»</h2>
+            <span class="tovar-size">Вага - 50 г.</span>
+            <div class="details">
+                <p><strong>Фруктово-медовий чай «Імбир та лемонграсс» – це смачний та корисний напій, що однаково смакує як холодним, так і гарячим. Влітку напій Асканія освіжить та тонізує, а взимку зігріє своїм теплом і подарує присмак улюблених ягід та фруктів.</strong></p>
+            </div>
+        </div>
+        <button class="view-button" onclick="showProductDetails(this)">Переглянути товар</button>
+    </div>
+    <div class="tovar-card" onmouseenter="showButton(this)" onmouseleave="hideButton(this)" data-image="img/drink3.jpg" data-price="17">
+        <img src="img/drink3.jpg" alt="Напої" class="tovar-image">
+        <div class="tovar-info">
+            <h2 class="tovar-title">Чай фруктово-медовий «Малина та м’ята»</h2>
+            <span class="tovar-size">Вага - 50 г.</span>
+            <div class="details">
+                <p><strong>Смак літа і тепла – фруктово-медовий чай «Малина та м’ята» від Асканія. Максимально натуральний, до складу входять тільки природні компоненти: квітковий мед, малина, чорна смородина, м’ята.</strong></p>
+            </div>
+        </div>
+        <button class="view-button" onclick="showProductDetails(this)">Переглянути товар</button>
+    </div>
+</section>
+
+<div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeProductModal()">×</span>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" src="" alt="" class="modal-image">
+        <p id="modal-price"></p>
+        <button class="buy-button">В кошик</button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <ul class="footer-social">
+            <li>
+                <a href="https://www.facebook.com/?locale=uk_UA" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/?lang=uk" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</footer>
+ 
+
+<script src="pieJS.js"></script>
+
+</body>
+</html>

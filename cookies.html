@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Печиво</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="homeCSS.css">
+    <link rel="stylesheet" href="pieCSS.css">
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">Кондитерська крамниця</a>
+         <div class="logo-img"><img src="img/logo.png" alt="logo" style="max-width: 100%; height: auto;"></div>
+        <ul class="navbar-nav">
+            <li><a class="nav-link" href="index.html" ><i class="fas fa-home "></i></a></li>
+            <li><a class="nav-link" href="contactusHTML.html"><i class="fas fa-mobile-alt "></i></a></li>
+            <li><a class="nav-link" href="cartHTML.html"><i class="fas fa-cart-shopping"></i></a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="tovar-list">
+    <div class="tovar-card" onmouseenter="showButton(this)" onmouseleave="hideButton(this)" data-image="img/cookies1.jpg" data-price="30">
+        <img src="img/cookies1.jpg" alt="Печиво" class="tovar-image">
+        <div class="tovar-info">
+            <h2 class="tovar-title">Італійське печиво Бісскоті</h2>
+            <span class="tovar-size">Вага - 100 г.</span>
+            <div class="details">
+                <p><strong>Незвичайно смачне та ароматне печиво з величезною кількістю горіхів, кураги та чорносливу​. Смак справжньої італійської випічки в наших біскоті.</strong></p>
+            </div>
+        </div>
+        <button class="view-button" onclick="showProductDetails(this)">Переглянути товар</button>
+    </div>
+    <div class="tovar-card" onmouseenter="showButton(this)" onmouseleave="hideButton(this)" data-image="img/cookies2.jpg" data-price="40">
+        <img src="img/cookies2.jpg" alt="Печиво" class="tovar-image">
+        <div class="tovar-info">
+            <h2 class="tovar-title">Печиво Шоколадне. Вологий трюфель.</h2>
+            <span class="tovar-size">Вага - 100 г.</span>
+            <div class="details">
+                <p><strong>Шоколадне, злегка вологе всередині з приголомшливим вершковим ароматом печиво. Чорний шоколад, натуральна ваніль, вершкове масло та трохи борошна вищого ґатунку — це історія смаку наших ідеальних печінки з ефектом кракелюру.</strong></p>
+            </div>
+        </div>
+        <button class="view-button" onclick="showProductDetails(this)">Переглянути товар</button>
+    </div>
+    <div class="tovar-card" onmouseenter="showButton(this)" onmouseleave="hideButton(this)" data-image="img/cookies3.jpg" data-price="400">
+        <img src="img/cookies3.jpg" alt="Печиво" class="tovar-image">
+        <div class="tovar-info">
+            <h2 class="tovar-title">Набір Патріотичних пряників.</h2>
+            <span class="tovar-size">Вага - 300 г.</span>
+            <div class="details">
+                <p><strong>М'які медово-імбирні-пряники зроблені на основі натурального ароматного меду та прянощів. Пряники ручної роботи.</strong></p>
+            </div>
+        </div>
+        <button class="view-button" onclick="showProductDetails(this)">Переглянути товар</button>
+    </div>
+</section>
+
+<div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeProductModal()">×</span>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" src="" alt="" class="modal-image">
+        <p id="modal-price"></p>
+        <button class="buy-button">В кошик</button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <ul class="footer-social">
+            <li>
+                <a href="https://www.facebook.com/?locale=uk_UA" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/?lang=uk" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</footer>
+ 
+
+<script src="pieJS.js"></script>
+
+</body>
+</html>

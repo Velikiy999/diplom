@@ -1,0 +1,564 @@
+/*Параметри для головної сторнки та для хедара*/
+/* Скидання відступів та налаштування коробкової моделі для всіх елементів */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+/* Загальні стилі для тіла сторінки */
+body {
+    font-family: Garamond, serif; 
+    padding-top: 10px; 
+    overflow-x: hidden; 
+    background-color: #eae3d1; 
+}
+
+/* Стилі для навігаційної панелі */
+.navbar {
+    background-image: url("img/fon1.jpg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+
+    border-radius: 8px; 
+    margin-right: 30px; 
+    margin-left: 30px; 
+ }
+
+/* Контейнер для навігаційних елементів */
+.container {
+    display: flex; 
+    align-items: center; 
+    width: 100%; 
+    justify-content: space-between; 
+}
+
+/* Стилі для бренду в навігації */
+.navbar-brand {
+    color: rgb(229, 216, 216); 
+    font-size: clamp(18px, 5vw, 40px);
+    font-style: italic; 
+    text-decoration: none; 
+    margin-right: 10px; 
+    
+}
+
+
+
+/* ----------Стиль для кнопки при наведенні */
+.search-button:hover {
+    background-color: #e07b00; 
+}
+
+/* Список навігаційних посилань */
+.navbar-nav {
+    list-style-type: none; 
+    display: flex; 
+        gap: 15px; 
+}
+
+/* Стиль для навігаційних посилань */
+.nav-link {
+    color: rgb(255, 255, 255); 
+    font-size: 20px; 
+    text-decoration: none; 
+}
+
+/* Стиль для посилань при наведенні */
+.nav-link:hover {
+    color: #d1d1d1; 
+}
+
+/* -------Стилі для зображень в слайдах */
+.swiper-slide img {
+    max-width: 80%; 
+    max-height: 80%; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+/* --------Стилі для кнопок навігації слайдів */
+.swiper-button-next, .swiper-button-prev {
+    color: #333;  
+     top: 50%; 
+    transform: translateY(-50%); 
+    width: 30px; 
+    height: 30px; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 50%; 
+    margin: 0 10px; 
+    z-index: 10; 
+}
+
+/* -------Стилі для пагінації слайдів */
+.swiper-pagination {
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: #333; 
+    font-weight: bold; 
+    z-index: 10; 
+}
+
+/* Стилі для секції категорій */
+.categories {
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* --------------Заголовок категорій */
+.category-title {
+    text-align: center;
+    font-size: 2rem; 
+    margin: 20px 0; 
+}
+
+/* Контейнер для категорій */
+.category-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+    justify-content: center; 
+}
+
+/* Стилі для елементів категорій */
+.category-item {
+    width: 110px; 
+    height:80px;  
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    color: #492104; 
+    background-color: #eae3d1; 
+    border-radius: 20px 0 20px 0; 
+    padding: 10px; 
+
+    transition: transform 0.3s ease; 
+    text-align: center; 
+}
+
+/* Стиль для елементів категорій при наведенні */
+.category-item:hover {
+    transform: translateY(-5px); 
+        background-color: #0000000d; 
+}
+
+/* Стилі для іконок категорій */
+.category-icon {
+    font-size: 35px; 
+    margin-bottom: 5px; 
+    color: inherit; 
+}
+
+/* Стилі для тексту категорій */
+.category-item p {
+    font-size: 16px; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+
+
+
+
+/* Стилі для футера */
+.footer {
+    
+    background-color: #633128; 
+    background-size: no-repeat;
+    padding: 10px 0; 
+    display: flex;
+    justify-content: center; 
+
+    border-radius: 8px; 
+    margin-right: 30px; 
+    margin-left: 30px; 
+    margin-bottom: 10px; 
+    }
+
+/* Контейнер для футера */
+.footer .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/*--------------- Список соціальних іконок */
+.footer-social {
+    list-style: none; 
+    display: flex; 
+    gap: 15px; 
+}
+
+/* -----------Стиль для соціальних посилань */
+.social-link {
+    color: white; 
+    font-size: 24px; 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+/* ----------Стиль для соціальних посилань при наведенні */
+.social-link:hover {
+    color: #d1d1d1; 
+}
+
+/* ----------Стилі для навігаційних посилань у футері */
+.navbar-nav .nav-link {
+    color: white; 
+    font-size: 20px; 
+    text-decoration: none; 
+}
+
+/* ---------Стиль для навігаційних посилань у футері при наведенні */
+.navbar-nav .nav-link:hover {
+    color: #d1d1d1; 
+}
+
+/* Контейнер для слайдера */
+#custom-slider {
+    height: 60vh;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    margin: 0 52px; 
+    padding-top: 5%; 
+}
+
+/* Назва секції */
+.popular-title {
+    text-align: center; 
+    font-size: 2rem; 
+    margin: 0; 
+    padding-bottom: 20px; 
+    position: relative; 
+}
+
+/* Слайдер тільки для .spring-slider */
+.spring-slider {
+    width: 100%; 
+    max-width: 100%; 
+    position: relative; 
+}
+
+/* Властивості слайдера */
+.spring-slider .swiper {
+    width: 100%; 
+}
+
+/* Властивості кожного слайду */
+.spring-slider .swiper-slide {
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #eae3d1; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+/* Зображення всередині слайдера */
+.spring-slider .swiper-slide img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+/* Масштабування зображення при наведенні */
+.spring-slider .swiper-slide:hover img {
+    transform: scale(0.95); 
+}
+
+/* Назва товару */
+.spring-slider .product-name {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background: rgba(0, 0, 0, 0.664); 
+    color: #fff; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    font-size: 1.2em; 
+    text-align: center; 
+    opacity: 0; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    pointer-events: none; 
+}
+
+/* Показ назви товару при наведенні */
+.spring-slider .swiper-slide:hover .product-name {
+    opacity: 1; 
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+/* Кнопки навігації */
+.spring-slider .swiper-button-next,
+.spring-slider .swiper-button-prev {
+    color: #333; 
+    background-color: rgba(255, 255, 255, 0.085);
+    border-radius: 50%; 
+    width: 35px; 
+    height: 35px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    transition: background-color 0.3s ease; 
+    position: absolute; 
+    z-index: 10; 
+}
+
+/* Позиціонування кнопок */
+.spring-slider .swiper-button-prev {
+    left: -15px; 
+}
+
+.spring-slider .swiper-button-next {
+    right: -15px; 
+}
+
+/* Зміна кольору кнопок при наведенні */
+.spring-slider .swiper-button-next:hover,
+.spring-slider .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+/* ------------------Пагінація */
+.spring-slider .swiper-pagination {
+    position: absolute;
+    bottom: 15px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: none; 
+    gap: 10px; 
+}
+
+/*-------------- Стиль для кожного елементу пагінації */
+.spring-slider .swiper-pagination-bullet {
+    width: 10px; 
+    height: 10px; 
+    background-color: #333; 
+    opacity: 0.5;
+    border-radius: 50%; 
+    transition: opacity 0.3s ease; 
+}
+
+/* -------------Активний елемент пагінації */
+.spring-slider .swiper-pagination-bullet-active {
+    opacity: 1; 
+}
+
+
+
+
+
+/*Секція відгуків*/
+.testimonials-section {
+    text-align: center; 
+    padding: 10px 20px;
+    background-color: #eae3d1; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.testimonials-section h2 {
+    font-family: 'Garamond', serif;
+    font-size: clamp(30px, 5vw, 40px);
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.testimonial-card {
+    display: inline-block; 
+    width: 280px; 
+    margin: 20px; 
+    padding: 20px; 
+    background-color: #f1f0e8; 
+    border-radius: 20px 0 20px 0; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
+    position: relative; 
+    transition: transform 0.3s, background-color 0.3s; 
+}
+
+.testimonial-card:hover {
+   
+    background-color: #0000000d; 
+    transform: translateY(-5px); 
+}
+/*----------------*/
+.testimonial-image {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px;
+    vertical-align: middle; 
+}
+
+.testimonial-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0 5px; 
+}
+/*----------------------*/
+.position {
+    font-size: 0.9rem; 
+    color: #888; 
+    margin: 0 0 10px; 
+}
+
+.testimonial-text {
+    font-size: 1rem; 
+    color: #464242; 
+    line-height: 1.5; 
+}
+
+/*Стилі для слайдера НАШІ ВИРОБИ*/
+.partners-section {
+    text-align: center; 
+    padding: 10px 20px; 
+    background-color: #eae3d1;
+
+    font-family: 'Garamond', serif; 
+}
+
+.partners-section h2 {
+    font-size: clamp(30px, 5vw, 40px);
+    color: #301a02; 
+    margin-bottom: 30px; 
+}
+
+.carousel-wrapper {
+    --width: 200px; 
+    --gap: 0; 
+    --num-items: 10; 
+    --ani-offset: calc(var(--width) * var(--num-items) * -1); 
+    --ani-speed: 20s;
+    --bg-clr: #eae3d1; 
+    
+    width: 300px; 
+    overflow: hidden; 
+    position: relative; 
+    margin: 0 auto; 
+}
+
+.carousel-wrapper::before,
+.carousel-wrapper::after {
+    content: '';
+    position: absolute; 
+    width: 20%;
+    height: 100%; 
+    z-index: 1; 
+    top: 0; 
+}
+
+.carousel-wrapper::before {
+    left: 0; 
+    background-image: linear-gradient(to right, var(--bg-clr) 0%, transparent 50%); 
+}
+
+.carousel-wrapper::after {
+    right: 0; 
+    background-image: linear-gradient(to left, var(--bg-clr) 0%, transparent 50%); 
+}
+
+.carousel {
+    display: flex; 
+    align-items: center; 
+    animation: slide var(--ani-speed) linear infinite; 
+}
+
+.carousel-inner {
+    display: flex; 
+    gap: var(--gap); 
+}
+
+.item {
+    flex: 1 0 var(--width); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 1rem; 
+    text-align: center; 
+}
+
+.item:last-child {
+    background: rgba(247, 245, 245, 0); 
+}
+
+.item > img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
+    display: block; 
+}
+
+@keyframes slide {
+    100% {
+        transform: translateX(var(--ani-offset)); 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,139 @@
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Garamond, serif; 
+    padding-top: 10px; 
+    overflow-x: hidden; 
+    background-color: #eae3d1; 
+}
+
+.tovar-list {
+    width: 100%; 
+    margin-top: 30px; 
+}
+
+.tovar-card {
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    border: 1px solid #d5cdcd; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin-bottom: 20px;
+    background-color: #f1ece5; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s, background-color 0.3s; 
+    overflow: hidden; 
+    margin-right: 30px; 
+    margin-left: 30px; 
+}
+
+.tovar-card:hover {
+    transform: translateY(-5px); 
+    background-color: #0000000d; 
+}
+
+.tovar-image {
+    max-width: 40%;
+    width: 250px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.tovar-info {
+    width: calc(100% - 140px); 
+}
+
+.tovar-title {
+    font-size: clamp(18px, 5vw, 30px); 
+    color: #2a2013; 
+    margin-bottom: 5px; 
+    vertical-align: top;
+}
+
+.tovar-size {
+    font-size: clamp(14px, 5vw, 20px); 
+    color: #2e2119; 
+    margin-bottom: 20px; 
+}
+.details {
+    font-size: clamp(8px, 3vw, 20px); 
+    color: #2e2119; 
+    margin-bottom: 10px; 
+}
+
+.view-button {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 10px 20px; 
+    font-size: 14px; 
+    color: #fff; 
+    background-color: #7756289a; 
+    border: none; 
+    border-radius: 4px; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    cursor: pointer; 
+}
+
+.monitor-card:hover .view-button {
+    opacity: 1; 
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.modal-content {
+    background-color: #eae3d1; 
+    padding: 20px; 
+    border-radius: 8px; 
+    text-align: center; 
+    width: 400px; 
+    position: relative; /
+}
+
+.modal-image {
+    width: 50%; 
+    border-radius: 8px; 
+    margin: 20px auto; 
+}
+
+.close-button {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    font-size: 24px; 
+    cursor: pointer; 
+    color: #333; 
+}
+
+#modal-price, .buy-button {
+    margin-top: 15px; 
+}
+
+.buy-button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: #fff; 
+    background-color: #0f4709f4; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
